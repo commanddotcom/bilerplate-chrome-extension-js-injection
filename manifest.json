@@ -1,0 +1,17 @@
+{
+  "name": "Chrome JS Injection",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Injecting inject.js in the page context",
+  
+  "content_scripts": [{
+    "js": ["inject.js"],
+    
+		"matches": ["http://*/*", "https://*/*"] 
+	}],
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "tabs"
+  ]
+}
